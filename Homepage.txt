@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Zintagram</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        
+  
+    @if (Route::has('login'))
+               
+            @endif
+
+        
+
+        </header>
+        
+    <body class="antialiased">
+        
+           
+
+           
+    </body>
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Photo-sharing platform</title>
+<style>
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: white;
+}
+nav{
+    background: black;
+    width: 100%;
+    overflow: auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    float: left;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background:black;
+    font-size: 13px;
+    color: white;
+    padding: 15px 10px;
+    font-family: Arial;
+}
+nav a:hover{
+    background: yellow;
+    color: black;
+}
+.banner-area{
+    background-image: url();
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    color: black;
+    text-align: left;
+}
+.banner-text h2{
+    font-family: Gabriola;
+    margin: 0;
+    font-size: 40px;
+    color: black;
+}
+.banner-text p{
+    font-size: 28px;
+    margin: 0;
+    font-family: Gabriola;
+}
+.banner-text a{
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 17px;
+    padding: 10px 35px;
+    color: black;
+    display: inline-block;
+    margin-top: 5%;
+    font-family: tahoma;
+    text-transform: uppercase;
+}
+.banner-text a:hover{
+    border-color: yellow;
+    background: yellow;
+    transition: .9s;
+    color: #262626; 
+}
+.gallery{
+    
+    float: right;
+    width: 500px;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="banner-area">
+<nav>
+  <<h1 style="color: white; font-size: 40 px; text-align: center;">ZINTAGRAM   <i class="fa fa-instagram" style="font-size:48px;color:red"></i></h1>
+    <div style=" margin-left: 300px; font-size: 20px;">
+    <ul>
+        <? //?><li> <a href="{{ url('/welcome') }}">Home</a></li>
+        <li><a href="{{ url('/login') }}" style="">Login</a></li>
+        <li><a href="{{ route('register') }}">Registration</a></li>
+        <li><a href="#">Contact</a></li>    
+    </ul>
+
+</nav>
+
+
+<div class="banner-text">
+    <b>
+            <h2>CANDID STUDIOS</h2>
+            <p>An Experience You'll Never Forget.</p>
+            <p>Photography is a way of feeling, of touching, of loving.</p>
+           <a href="{{ url('/login') }}" style="">Login</a></li>
+            <a href="#">about us</a>
+        </b>
+        </div>
+        <style>
+            
+            body{
+                background-image: url('back.jpg');
+               background-repeat:no-repeat;
+               background-size: auto;
+                
+             }
+        </style>
+<div style="border-style: solid;
+
+  margin-right:1%;
+  margin-left:6%;
+  margin-top: 100px;
+  padding: 2px;
+  text-align: left;
+  position: absolute;
+  background-color: white;
+  border-color: #ffff;
+  border-radius: ;">
+  <h3 style="text-align: center;"> <strong>Gallery</strong></h3>
+    <div class="mySlides" style="left:50px; text-align-last:  left;">
+
+ <img src="pic1.jpg" width="500" height="300"><br>
+ <b>
+  
+Rashvan<br>"The world of colors is true beauty like a rim of feathers"
+
+ </div>
+    <div class="mySlides" style="left:50px; text-align-last:  left;">
+
+ <img src="pic2.jpg" width="500" height="300"><br>
+ <b>
+
+Rono<br>"It's a gift. I just smile"
+</div>
+<div class="mySlides" style="left:50px; text-align-last:  left;">
+
+ <img src="pic3.jpg" width="500" height="300"><br>
+ <b>
+ 
+
+Chero<br>"Photography is moments that cannot be put to words"
+</div>
+<div class="mySlides" style="left:50px; text-align-last:  left;">
+
+ <img src="pic4.jpg" width="500" height="300"><br>
+ <b>
+
+Rono<br>"Splendidly magnificent like beating united
+"
+</div>
+</div>
+  </div>
+
+</div>
+
+<style>
+
+
+
+.mySlides {display:none;}
+
+</style>
+
+  
+  </form>
+  </div>
+</div>
+
+<script>
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); 
+}
+
+</script>
+
+</div>
+</div>
+
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</html>
